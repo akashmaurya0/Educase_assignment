@@ -14,7 +14,7 @@ const Home = () => {
 
       <Link
         to="/signup"
-        className="text-white font-semibold w-full text-center bg-[#] hover:bg-[#5d0ec0] p-2 rounded-md mb-2"
+        className="text-white font-semibold w-full text-center bg-[#6c25ff] hover:bg-[#5d0ec0] p-2 rounded-md mb-2"
       >
         Create Account
       </Link>
