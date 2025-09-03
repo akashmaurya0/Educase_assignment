@@ -22,8 +22,8 @@ const Account = () => {
             </div>
           </div>
           <div>
-            <p className="font-semibold">Marry Doe</p>
-            <p className="text-gray-600 text-xs">Marry@Gmail.Com</p>
+            <p className="font-semibold">alina</p>
+            <p className="text-gray-600 text-xs">alina10@Gmail.Com</p>
           </div>
         </div>
         <p className="font-semibold text-gray-600">
