@@ -9,7 +9,7 @@ const Account = () => {
         Account Settings
       </div>
       <div className="account border-b text-sm border-b-gray-400 border-dashed p-4">
-        {/* profile */}
+        {/*login ke baad ka  profile */}
         <div className="flex gap-2 py-4">
           <div className="relative">
             <img

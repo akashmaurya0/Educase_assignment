@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Homepage = () => {
   return (
     <div className="aspect-[9/16] h-full flex flex-col items-start justify-end bg-[#f7f8f9] p-6">
-      {/* bottom content */}
+      {/* last content */}
       <div className="max-w-[60%] mb-4">
         <p className="text-2xl font-bold">Welcome to PopX</p>
         <p className="text-gray-600">
@@ -28,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homepage;

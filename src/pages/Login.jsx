@@ -10,9 +10,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate login validation
     setTimeout(() => {
-      localStorage.setItem("user", JSON.stringify({ email }));
+      localStorage.setItem("user", JSON.stringify({email}));
       setIsSubmitting(false);
       navigate("/account");
     }, 500);
@@ -31,7 +30,7 @@ const Login = () => {
         </p>
 
         <form onSubmit={handleSubmit}>
-          {/* email input */}
+          {/* email */}
           <div className="mb-6 relative">
             <div className="border border-gray-400 rounded-md px-3 pt-3 pb-2 focus-within:border-[#4285F4]  ">
               <label
@@ -52,7 +51,7 @@ const Login = () => {
               />
             </div>
           </div>
-          {/* password input */}
+          {/* password */}
           <div className="mb-6 relative">
             <div className="border border-gray-400 rounded-md px-3 pt-3 pb-2 focus-within:border-[#4285F4]  ">
               <label
