@@ -1,8 +1,10 @@
 import React from "react";
 import profile from "../assets/profile.png";
 import camera from "../assets/camera.png";
-
+import { useLocation } from "react-router-dom";
 const Account = () => {
+  const location = useLocation();
+   const { fullName, email } = location.state || {}; 
   return (
     <div className="aspect-[9/16] h-full flex flex-col items-start justify-start bg-[#f7f8f9]">
       <div className="w-full font-semibold text-xl py-6 shadow-xs bg-white p-4">
@@ -22,8 +24,8 @@ const Account = () => {
             </div>
           </div>
           <div>
-            <p className="font-semibold">alina</p>
-            <p className="text-gray-600 text-xs">alina10@Gmail.Com</p>
+            <p className="font-semibold">{fullName||"user"}</p>
+            <p className="text-gray-600 text-xs">{email}</p>
           </div>
         </div>
         <p className="font-semibold text-gray-600">

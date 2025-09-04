@@ -161,7 +161,9 @@ const Signup = () => {
         </form>
       </div>
       <button
-        onClick={() => navigate("/account")}
+        onClick={() =>  navigate("/account", {
+      state: { fullName, email },
+    })}
         className={`text-white font-semibold w-full text-center bg-[#6c25ff] hover:bg-[#5d0ec0] p-2 rounded-md mb-2 ${
           isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
         }`}

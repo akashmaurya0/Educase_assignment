@@ -13,7 +13,7 @@ const Login = () => {
     setTimeout(() => {
       localStorage.setItem("user", JSON.stringify({email}));
       setIsSubmitting(false);
-      navigate("/account");
+      navigate("/account", { state: { email } });
     }, 500);
   };
 
